@@ -1,0 +1,193 @@
+/* SERVICES CSS */
+// @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,700');
+
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+$gr-1: linear-gradient(170deg, #01E4F8 0%, #1D3EDE 100%);
+$gr-2: linear-gradient(170deg, #B4EC51 0%, #429321 100%);
+$gr-3: linear-gradient(170deg, #C86DD7 0%, #3023AE 100%);
+$gr-4: linear-gradient(170deg, #f2c94c 0%, #ee8428 100%);
+$gr-5: linear-gradient(170deg, #e35d5b 0%, #e53935 100%);
+$gr-6: linear-gradient(170deg, #f16529 0%, #e44d26 100%);
+$gr-7: linear-gradient(170deg, #f15f79 0%, #b24592 100%);
+$gr-8: linear-gradient(170deg, #93f9b9 0%, #1d976c 100%);
+$gr-9: linear-gradient(170deg, #ff9472 0%, #f2709c 100%);
+$gr-10: linear-gradient(170deg, #4286f4 0%, #373b44 100%);
+$gr-11: linear-gradient(170deg, #bbd2c5 0%, #536976 100%);
+$gr-12: linear-gradient(170deg, #e100ff 0%, #7f00ff 100%);
+
+
+.gr-1 {
+    background: $gr-1;
+}
+
+.gr-2 {
+    background: $gr-2;
+}
+
+.gr-3 {
+    background: $gr-3;
+}
+
+.gr-4 {
+    background: $gr-4;
+}
+
+.gr-5 {
+    background: $gr-5;
+}
+
+.gr-6 {
+    background: $gr-6;
+}
+
+.gr-7 {
+    background: $gr-7;
+}
+
+.gr-8 {
+    background: $gr-8;
+}
+
+.gr-9 {
+    background: $gr-9;
+}
+
+.gr-10 {
+    background: $gr-10;
+}
+
+.gr-11 {
+    background: $gr-11;
+}
+
+.gr-12 {
+    background: $gr-12;
+}
+
+// * {
+//     transition: .5s;
+// }
+
+// .card-height {
+//     height: 100vh !important;
+// }
+
+// @media (max-width: 576px) {
+//     .card-height {
+//         height: 80vh !important;
+//     }
+// }
+
+// .align-middle {
+//     position: relative;
+//     top: 50%;
+//     transform: translateY(-50%);
+// }
+
+.column {
+    margin-top: 3rem;
+    padding-left: 3rem;
+
+    &:hover {
+        padding-left: 0;
+
+        .card .txt {
+            margin-left: 1rem;
+
+            h1,
+            p {
+                color: rgba(255, 255, 255, 1);
+                opacity: 1;
+            }
+        }
+
+        a {
+            color: rgba(255, 255, 255, 1);
+
+            &:after {
+                width: 10%;
+            }
+        }
+    }
+}
+
+.card {
+    min-height: 170px;
+    margin: 0;
+    padding: 1.7rem 1.2rem;
+    border: none;
+    border-radius: 0;
+    color: rgba(0, 0, 0, 1);
+    letter-spacing: .05rem;
+    font-family: 'Oswald', sans-serif;
+    box-shadow: 0 0 21px rgba(0, 0, 0, .27);
+
+    .txt {
+        margin-left: 1rem;
+        z-index: 1;
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: .7rem;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 0rem;
+            margin-top: 33px;
+            opacity: 0;
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+
+    a {
+        z-index: 3;
+        font-size: .7rem;
+        color: rgba(0, 0, 0, 1);
+        margin-left: 1rem;
+        position: relative;
+        bottom: -.5rem;
+        text-transform: uppercase;
+
+        &:after {
+            content: "";
+            display: inline-block;
+            height: 0.5em;
+            width: 0;
+            margin-right: -100%;
+            margin-left: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 1);
+            transition: .5s;
+        }
+    }
+
+    .ico-card {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    i {
+        position: relative;
+        right: -50%;
+        top: 10%;
+        font-size: 12rem;
+        line-height: 0;
+        opacity: .2;
+        color: rgba(255, 255, 255, 1);
+        z-index: 0;
+    }
+}
+
+// ECOMMERCE CSS
+// .gr-nelson {
+//     background: linear-gradient(170deg, #e100ff 10%, #7f00ff 100%);
+// }
